@@ -1,0 +1,8 @@
+.div_two_columns{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+.center-text {
+    text-align: center;
+  }
