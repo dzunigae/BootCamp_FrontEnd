@@ -1,3 +1,8 @@
+header {
+    position: fixed;
+    top: 0;
+  }
+
 .div_two_columns{
     display: grid; 
     grid-template-columns: 1fr 1fr;
@@ -10,4 +15,8 @@
 .estandar {
     width: 200px;
     height: 200px;
+}
+
+.white_letters{
+    color: #b3b3b3;
 }
