@@ -16,6 +16,10 @@
         top: 0;
       }
 
+      span {
+        font-weight: bold;
+      }
+
       .div_two_columns {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -36,7 +40,7 @@
     </style>
     <script>
       var button = document.getElementById("mostrar_fecha_hora");
-      button.addEventListener("click", function() {
+      button.addEventListener("click", function () {
         //Obtener fecha y hora actual
         var fechaHora = new Date();
 
@@ -44,7 +48,7 @@
 
         document.getElementById("fecha_hora").value = fechaHoraString;
       });
-    </script>    
+    </script>
   </head>
   <body>
     <header class="white_letters">
@@ -492,8 +496,10 @@
             <label>¿Tu edad? (Opcional)</label>
             <input type="number" />
             <label>Fecha de tu ordenador</label>
-            <input type="datetime-local" id="fecha_hora"/>
-            <button id="mostrar_fecha_hora">Obtener fecha automáticamente (Aún no funciona)</button>
+            <input type="datetime-local" id="fecha_hora" />
+            <button id="mostrar_fecha_hora">
+              Obtener fecha automáticamente (Aún no funciona)
+            </button>
           </div>
           <br />
           <div>
