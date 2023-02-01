@@ -10,11 +10,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Liga de Villanos</title>
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <style>
+      header {
+        position: fixed;
+        top: 0;
+      }
+
+      .div_two_columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+
+      .estandar {
+        width: 200px;
+        height: 200px;
+      }
+
+      .white_letters {
+        color: #b3b3b3;
+      }
+    </style>
+    <script>
+      var button = document.getElementById("mostrar_fecha_hora");
+      button.addEventListener("click", function() {
+        //Obtener fecha y hora actual
+        var fechaHora = new Date();
+
+        var fechaHoraString = fechaHora.toISOString().substring(0, 16);
+
+        document.getElementById("fecha_hora").value = fechaHoraString;
+      });
+    </script>    
   </head>
   <body>
     <header class="white_letters">
-      <div class="div_two_columns" style="background-image: url('./img/intro.png'); background-size: 50% auto">
+      <div
+        class="div_two_columns"
+        style="
+          background-image: url('./img/intro.png');
+          background-size: 50% auto;
+        "
+      >
         <div>
           <h1 class="center-text">Liga de Villanos</h1>
           <h5 class="center-text">Boku No Hero Academia</h5>
@@ -96,35 +136,93 @@
           <tr>
             <th>Foto</th>
             <th>Alias</th>
-            <th>Ficha personal</th>
+            <th>Ficha</th>
             <th>Habilidades</th>
           </tr>
           <tr>
-            <td><img src="./img/afo.png" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/afo.png"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>All For One</td>
-            <td>En construcción</td>
+            <td>
+              <ul>
+                <li>Edad: 100+</li>
+                <li>Género: Masculino</li>
+                <li>Grupo sanguineo: B</li>
+                <li>
+                  Don:
+                  <ul>
+                    <li>All For One</li>
+                    <li>Muchos dones robados</li>
+                  </ul>
+                </li>
+                <li>Estado: Liberado</li>
+              </ul>
+            </td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/st.png" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/st.png"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Tomura Shigaraki</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/k.png" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/k.png"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Kurogiri</td>
-            <td>En construcción</td>
-            <td>En construcción</td>
+            <td>
+              <ul>
+                <li>Edad: Desconocida</li>
+                <li>Género: Masculino</li>
+                <li>Grupo sanguineo: Desconocido</li>
+                <li>Don: Warp Gate</li>
+                <li>Estado: Preso</li>
+              </ul>
+            </td>
+            <td>
+              <ol>
+                <li>Evasión/Intangibilidad</li>
+                <li>Manipulación de su forma</li>
+                <li>Creación de portales a través de su cuerpo</li>
+              </ol>
+            </td>
           </tr>
           <tr>
-            <td><img src="./img/gm.jpg" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/gm.jpg"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Gigantomachia</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/kg.jpg" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/kg.jpg"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Dr. Garaki</td>
             <td>En construcción</td>
             <td>En construcción</td>
@@ -143,55 +241,109 @@
             <th>Habilidades</th>
           </tr>
           <tr>
-            <td><img src="./img/d.jpg" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/d.jpg"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Dabi</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/ht.png" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/ht.png"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Himiko Toga</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/t.png" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/t.png"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Twice</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/s.jpg" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/s.jpg"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Spinner</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/mc.jpg" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/mc.jpg"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Mr. Compress</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/m.jpg" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/m.jpg"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Magne</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/mu.jpg" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/mu.jpg"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Muscular</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/mus.jpg" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/mus.jpg"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Mustard</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/moo.png" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/moo.png"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Moonfish</td>
             <td>En construcción</td>
             <td>En construcción</td>
@@ -210,31 +362,61 @@
             <th>Habilidades</th>
           </tr>
           <tr>
-            <td><img src="./img/g.png" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/g.png"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Giran</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/rd.jpeg" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/rd.jpeg"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Re Destro</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/t.jpg" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/t.jpg"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Trumpet</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/sk.jpg" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/sk.jpg"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Skeptic</td>
             <td>En construcción</td>
             <td>En construcción</td>
           </tr>
           <tr>
-            <td><img src="./img/geten.png" alt="Imagen no disponible" class="estandar"/></td>
+            <td>
+              <img
+                src="./img/geten.png"
+                alt="Imagen no disponible"
+                class="estandar"
+              />
+            </td>
             <td>Geten</td>
             <td>En construcción</td>
             <td>En construcción</td>
@@ -246,72 +428,91 @@
       <section id="section6">
         <h2>Retroalimenta esta información</h2>
         <form>
-          <label>Nombre:</label>
-          <input type="text" />
-          <label>Email</label>
-          <input type="email" />
-          <label>Contraseña (Opcional :v)</label>
-          <input type="password" />
-          <label>¿Te gustó la página?</label>
-          <input type="radio" id="mucho" name="gusto" />
-          <label for="mucho">Mucho</label>
-          <input type="radio" id="poco" name="gusto" />
-          <label for="poco">Poco</label>
-          <input type="radio" id="nada" name="gusto" />
-          <label for="nada">Nada</label>
-          <input type="radio" id="meh" name="gusto" />
-          <label for="meh">Meh</label>
-          <label for="villains">¿Cuales son tus villanos favoritos?</label>
-          <input type="checkbox" id="afo" name="villains" />
-          <label for="afo">Afo</label>
-          <input type="checkbox" id="tomura" name="villains" />
-          <label for="tomura">Tomura</label>
-          <input type="checkbox" id="kurogiri" name="villains" />
-          <label for="kurogiri">Kurogiri</label>
-          <input type="checkbox" id="machia" name="villains" />
-          <label for="machia">Gigantomachia</label>
-          <input type="checkbox" id="garaki" name="villains" />
-          <label for="garaki">K. Garaki</label>
-          <input type="checkbox" id="dabi" name="villains" />
-          <label for="dabi">Dabi</label>
-          <input type="checkbox" id="himiko" name="villains" />
-          <label for="himiko">Toga</label>
-          <input type="checkbox" id="twice" name="villains" />
-          <label for="twice">Twice</label>
-          <input type="checkbox" id="spinner" name="villains" />
-          <label for="spinner">Spinner</label>
-          <input type="checkbox" id="mr" name="villains" />
-          <label for="mr">Compress</label>
-          <input type="checkbox" id="magne" name="villains" />
-          <label for="magne">Magne</label>
-          <input type="checkbox" id="musc" name="villains" />
-          <label for="musc">Muscular</label>
-          <input type="checkbox" id="mustard" name="villains" />
-          <label for="mustard">Mustard</label>
-          <input type="checkbox" id="moon" name="villains" />
-          <label for="moon">Moonfish</label>
-          <input type="checkbox" id="giran" name="villains" />
-          <label for="giran">Giran</label>
-          <input type="checkbox" id="re" name="villains" />
-          <label for="re">Re Destro</label>
-          <input type="checkbox" id="trumpet" name="villains" />
-          <label for="trumpet">Trumpet</label>
-          <input type="checkbox" id="skeptic" name="villains" />
-          <label for="skeptic">Skeptic</label>
-          <input type="checkbox" id="geten" name="villains" />
-          <label for="geten">Geten</label>
-          <label>¿Tu edad? (Opcional)</label>
-          <input type="number" />
-          <label>Fecha de tu ordenador</label>
-          <input type="datetime-local" />
-          <button>Obtener fecha automáticamente</button>
-          <label>Dejanos tu comentario</label>
-          <input type="text" />
+          <div>
+            <label>Nombre:</label>
+            <input type="text" />
+            <label>Email</label>
+            <input type="email" />
+            <label>Contraseña (Opcional :v)</label>
+            <input type="password" />
+            <label>¿Te gustó la página?</label>
+            <input type="radio" id="mucho" name="gusto" />
+            <label for="mucho">Mucho</label>
+            <input type="radio" id="poco" name="gusto" />
+            <label for="poco">Poco</label>
+            <input type="radio" id="nada" name="gusto" />
+            <label for="nada">Nada</label>
+            <input type="radio" id="meh" name="gusto" />
+            <label for="meh">Meh</label>
+          </div>
+          <br />
+          <div>
+            <label for="villains">¿Cuales son tus villanos favoritos?</label>
+            <input type="checkbox" id="afo" name="villains" />
+            <label for="afo">Afo</label>
+            <input type="checkbox" id="tomura" name="villains" />
+            <label for="tomura">Tomura</label>
+            <input type="checkbox" id="kurogiri" name="villains" />
+            <label for="kurogiri">Kurogiri</label>
+            <input type="checkbox" id="machia" name="villains" />
+            <label for="machia">Gigantomachia</label>
+            <input type="checkbox" id="garaki" name="villains" />
+            <label for="garaki">K. Garaki</label>
+            <input type="checkbox" id="dabi" name="villains" />
+            <label for="dabi">Dabi</label>
+            <input type="checkbox" id="himiko" name="villains" />
+            <label for="himiko">Toga</label>
+            <input type="checkbox" id="twice" name="villains" />
+            <label for="twice">Twice</label>
+            <input type="checkbox" id="spinner" name="villains" />
+            <label for="spinner">Spinner</label>
+            <input type="checkbox" id="mr" name="villains" />
+            <label for="mr">Compress</label>
+            <input type="checkbox" id="magne" name="villains" />
+            <label for="magne">Magne</label>
+            <input type="checkbox" id="musc" name="villains" />
+            <label for="musc">Muscular</label>
+            <input type="checkbox" id="mustard" name="villains" />
+            <label for="mustard">Mustard</label>
+            <input type="checkbox" id="moon" name="villains" />
+            <label for="moon">Moonfish</label>
+            <input type="checkbox" id="giran" name="villains" />
+            <label for="giran">Giran</label>
+            <input type="checkbox" id="re" name="villains" />
+            <label for="re">Re Destro</label>
+            <input type="checkbox" id="trumpet" name="villains" />
+            <label for="trumpet">Trumpet</label>
+            <input type="checkbox" id="skeptic" name="villains" />
+            <label for="skeptic">Skeptic</label>
+            <input type="checkbox" id="geten" name="villains" />
+            <label for="geten">Geten</label>
+          </div>
+          <br />
+          <div>
+            <label>¿Tu edad? (Opcional)</label>
+            <input type="number" />
+            <label>Fecha de tu ordenador</label>
+            <input type="datetime-local" id="fecha_hora"/>
+            <button id="mostrar_fecha_hora">Obtener fecha automáticamente (Aún no funciona)</button>
+          </div>
+          <br />
+          <div>
+            <label>Dejanos tu comentario</label>
+            <input type="text" />
+          </div>
+          <br />
           <input type="submit" />
         </form>
       </section>
     </main>
-    <footer class="white_letters" id="section7" style="background-image: url('./img/intro.png'); background-size: 50% auto">
+    <footer
+      class="white_letters"
+      id="section7"
+      style="
+        background-image: url('./img/intro.png');
+        background-size: 50% auto;
+      "
+    >
       <p>
         Las imágenes pertenecen a sus respectivos autores, su uso obedece
         exclusivamente a un ejercicio académico sin fines comerciales.
